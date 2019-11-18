@@ -1,0 +1,86 @@
+body {
+  background-color: lightgray;
+}
+.container {
+    margin: 0 auto;
+    width: 1280px;
+}
+
+/* slider ----------------------*/
+.slide-wrap {
+    width: 100%;
+    margin-top: 20px;
+}
+.slide-mask {
+  position: relative;
+  overflow: hidden;
+  height: 720px; /* height of the image */
+}
+.slide {
+    height: 720px; /* height of the image */
+}
+.slide-group {
+    position: absolute; 
+    width: 100%;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+.slide img {
+    width: 960px;
+    float: left;
+}
+.slide .text_box {
+    background-color: white;
+    width: 280px;
+    height: 100%;
+    float: left;
+}
+.text_box p {
+    padding: 20px;
+}
+.text_box .title{
+    font-size: 2em;
+    line-height: 2em;
+    text-transform: uppercase;
+}
+.text_box .year{
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+.text_box .medium{
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+.text_box .description{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+/* btn ----------------------*/
+.slider-btn {
+  text-align: center;
+    margin-top: 20px;
+}
+.slider-btn ul {
+	margin: 0;
+	padding: 0;
+}
+.slider-btn li {
+  display: inline-block;
+  width: 50px;
+  height: 6px;
+  background: gray;
+  cursor: pointer;
+  margin-left: .7em;
+}
+.slider-btn li:hover {
+    transform: scaleY(2.5);
+    transition-duration: 0.5s;
+    opacity: 0.5;
+}
+.slider-btn li.current {
+	background: red;
+}
+
